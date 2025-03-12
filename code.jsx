@@ -22,17 +22,20 @@ const LoginForm = () => {
   const handleLogin = () => {
     if (!isValidEmail(userID)) {
       alert("Please enter a valid email address.");
-      setLoading(true);
       return;
     }
     if (!isValidPassword(password)) {
       alert("Password must be at least 8 characters");
       return;
     }      
-
+    setLoading(true);
+    
     setTimeout(() => {
-      setLoading(false);
       alert("Login Successful! 🎉");
+
+      setLoading(false);
+      setUserID{""};
+      setPassword{""};
     }, 2000);
     
   };
