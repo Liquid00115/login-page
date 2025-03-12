@@ -77,7 +77,7 @@ const LoginForm = () => {
               className="w-full bg-cyan-700 h-10 rounded-lg text-white cursor-pointer"
               onClick={handleLogin}
               disabled={loading}
-              >{loading ? (<Loader className="animate-spin border-4 border-white border-t-transparent rounded-full w-5 h-5"/> )  : ("Login")}</button>
+              >div className="flex items-center justify-center">{loading ? (<Loader className="animate-spin w-5 h-5 "/> )  : ("Login")}</div></button>
               <p>Forgotten your password? <span onClick={forgotPassword} className="font-bold cursor-pointer">Click here</span></p>
             </div>
         </div>
